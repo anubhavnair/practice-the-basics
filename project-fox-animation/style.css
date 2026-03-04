@@ -1,0 +1,58 @@
+@font-face {
+	font-family: "my-font";
+	src: url(".././css-1/NeueMachina-Regular (1).woff2") format("woff2");
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 20px;
+	padding: 20px;
+}
+section {
+	background-color: red;
+	height: 400px;
+	width: 400px;
+	position: relative;
+	overflow: hidden;
+	border-radius: 5%;
+}
+
+section img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+section .bottom {
+	position: absolute;
+	bottom: -20%;
+	background-color: black;
+	color: white;
+	font-size: 50px;
+	font-family: "my-font", angel-font;
+	text-align: center;
+	background: linear-gradient(transparent, black);
+	width: 100%;
+	transition: all 0.2s ease-out;
+	font-family: my-font;
+}
+section:hover {
+	cursor: pointer;
+}
+section:hover .bottom {
+	bottom: 0%;
+	transition: all 0.2s ease-in;
+}
