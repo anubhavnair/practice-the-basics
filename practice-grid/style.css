@@ -1,0 +1,50 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+main {
+	height: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-areas:
+		"header header header"
+		"section section section"
+		"div-left bottom-up div-right"
+		"div-left bottom-down div-right";
+	grid-gap: 10px;
+}
+
+.child {
+	background-color: lightblue;
+	border: 1px solid black;
+}
+#child1 {
+	grid-area: header;
+	background-color: red;
+}
+#child2 {
+	grid-area: section;
+	background-color: green;
+}
+#child3 {
+	grid-area: div-left;
+	background-color: yellow;
+}
+#child4 {
+	grid-area: bottom-up;
+	background-color: orange;
+}
+#child5 {
+	grid-area: bottom-down;
+	background-color: purple;
+}
+#child6 {
+	grid-area: div-right;
+	background-color: pink;
+}
