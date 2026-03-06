@@ -1,0 +1,24 @@
+:root {
+  --x: 200px;
+  --y: 200px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: url("https://i.pinimg.com/736x/af/34/a8/af34a8f2d89dd0c6eff23cc1cc557fd6.jpg");
+}
+
+.box {
+  height: 100%;
+  width: 100%;
+  border: 1px solid white;
+  background: radial-gradient(100px at var(--x) var(--y), rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 80%);
+}/*# sourceMappingURL=style.css.map */
